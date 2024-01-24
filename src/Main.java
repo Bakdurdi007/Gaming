@@ -12,35 +12,56 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        System.out.println(" Zaxro Hello");
         Menu();
     }
 
     public static void Menu() {
 
-        JFrame myJFrame = new JFrame();
+        Scanner scanner = new Scanner(System.in);
 
         Place.showPlace();
 
-        myJFrame.addKeyListener(new KeyAdapter() {
-            public void keyPressed(KeyEvent e) {
-                int keyCode = e.getKeyCode();
-                if (keyCode == KeyEvent.VK_UP) {
-                    Up();
-                    Menu();
-                } else if (keyCode == KeyEvent.VK_DOWN) {
-                    Down();
-                    Menu();
-                } else if (keyCode == KeyEvent.VK_LEFT) {
-                    Left();
-                    Menu();
-                } else if (keyCode == KeyEvent.VK_RIGHT) {
-                    Right();
-                    Menu();
-                }
-            }
-        });
+        System.out.println("(1. Right)  (2. Left)  (3. Up)  (4. Down)  (0. Quit)");
+        System.out.print(">>> ");
 
-        myJFrame.setVisible(true);
+        int n = scanner.nextInt();
+
+        switch (n){
+            case 0:
+                System.out.println(" Dastur yopildi! ");
+                return;
+
+
+            case 1:
+                Right();
+                Menu();
+                break;
+
+            case 2:
+                Left();
+                Menu();
+                break;
+
+
+            case 3:
+                Up();
+                Menu();
+                break;
+
+
+            case 4:
+                Down();
+                Menu();
+                break;
+
+
+            default:
+                System.out.println(" Siz mavjud bo'lmagan buyrug'ni tanladingiz! ");
+                Menu();
+                break;
+        }
+
     }
 
     public static void Right() {
