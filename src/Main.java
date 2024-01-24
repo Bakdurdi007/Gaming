@@ -21,7 +21,7 @@ public class Main {
 
         Place.showPlace();
 
-        System.out.println("(1. Right)  (2. Left)  (3. Up)  (4. Down)  (0. Quit)");
+        System.out.println("(1. Right)  (2. Left)  (3. Up)  (4. Dow)  (0. Quit)");
         System.out.print(">>> ");
 
         int n = scanner.nextInt();
