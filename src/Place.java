@@ -5,8 +5,10 @@
  * Time: 3:48 p.m.
  *******************************************************/
 public class Place {
-    public static String B = "\uD83C\uDF32";
-    public static String Q = "\uD83E\uDD89";
+    static String U = "\uD83C\uDFE1";
+    static String E = " ";
+    static String B = "\uD83C\uDF32";
+    static String Q = "\uD83D\uDC3C";
 
     public static int row = 5;
     public static int col = 5;
@@ -14,10 +16,10 @@ public class Place {
 
             {B, B, B, B, B, B, B, B, B, B, B},
             {B, B, B, B, B, B, B, B, B, B, B},
-            {B, B, B, B, B, B, B, B, B, B, B},
-            {B, B, B, B, B, B, B, B, B, B, B},
-            {B, B, B, B, B, B, B, B, B, B, B},
-            {B, B, B, B, B, Q, B, B, B, B, B},
+            {B, B, B, B, B, B, B, E, U, B, B},
+            {B, B, B, B, B, B, B, E, B, B, B},
+            {B, B, B, B, B, B, B, E, B, B, B},
+            {B, B, B, B, B, Q, E, E, B, B, B},
             {B, B, B, B, B, B, B, B, B, B, B},
             {B, B, B, B, B, B, B, B, B, B, B},
             {B, B, B, B, B, B, B, B, B, B, B},

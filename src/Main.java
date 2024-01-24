@@ -19,9 +19,10 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Pandani uyiga olib boring.");
         Place.showPlace();
 
-        System.out.println("(1. Right)  (2. Left)  (3. Up)  (4. Down)  (0. Quit)");
+        System.out.println("(1. Right)  (2. Left)  (3. Up)  (4. Dow)  (0. Quit)");
         System.out.print(">>> ");
 
         int n = scanner.nextInt();

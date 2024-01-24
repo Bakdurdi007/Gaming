@@ -1,3 +1,8 @@
 public class Komronbek {
-    private int age = 16;
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i + ". Hello !");
+        }
+    }
 }
