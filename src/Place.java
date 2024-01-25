@@ -8,7 +8,7 @@ public class Place {
     static String U = "\uD83C\uDFE1";
     static String E = " ";
     static String B = "\uD83C\uDF32";
-    static String Q = "\uD83E\uDD89";
+    static String Q = "\uD83D\uDC3C";
 
     public static int row = 5;
     public static int col = 5;
